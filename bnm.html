@@ -3,69 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Website</title>
+    <title>BNMIT Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* CSS styles for the webpage */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            padding: 15px 0;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        .feature-box {
-            float: left;
-            width: 30%;
-            padding: 20px;
-            background: #fff;
-            margin: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .feature-box h3 {
-            color: #333;
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('bnmit-campus.jpg') no-repeat center center/cover;
+            height: 500px;
+            position: relative;
             text-align: center;
+            color: #fff;
+        }
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+        }
+        .info {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .info h2 {
+            margin-bottom: 20px;
+        }
+        .info p {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
         footer {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 20px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Awesome Website</h1>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>BNMIT</h1>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <div class="feature-box">
-            <h3>Feature 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo vel odio pulvinar consequat.</p>
+
+    <section class="hero">
+        <h1>Welcome to BNMIT</h1>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <h2>About BNMIT</h2>
+            <p>BNM Institute of Technology is a premier institution established with the objective of imparting quality education. Our mission is to provide an environment that fosters academic excellence and holistic growth.</p>
+            <p>We offer a wide range of undergraduate and postgraduate programs in engineering, management, and more. Our state-of-the-art campus, experienced faculty, and innovative teaching methods ensure that our students are well-prepared for the challenges of the future.</p>
         </div>
-        <div class="feature-box">
-            <h3>Feature 2</h3>
-            <p>Phasellus commodo fermentum augue, et ornare sapien eleifend vel. Mauris et sapien ac justo vestibulum pretium.</p>
-        </div>
-        <div class="feature-box">
-            <h3>Feature 3</h3>
-            <p>Sed vitae dolor non leo maximus fermentum. Fusce vel arcu aliquam, iaculis justo nec, mattis nisl.</p>
-        </div>
-    </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Awesome Website. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 BNMIT. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
